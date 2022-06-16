@@ -1,0 +1,55 @@
+html,
+body {
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  text-align: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 100px;
+  position: absolute;
+  position: relative;
+  z-index: 1;
+}
+
+.container video {
+  outline: none;
+  display: block;
+}
+
+.def {
+  border-radius: 30px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.blur {
+  --pos: 50px;
+  position: absolute;
+  top: var(--pos);
+  left: var(--pos);
+  right: var(--pos);
+  bottom: var(--pos);
+  filter: saturate(20) blur(50px);
+  z-index: 0;
+  display: flex;
+}
+
+article {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+article div {
+  transition: 0.5s;
+}
